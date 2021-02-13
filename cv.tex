@@ -15,12 +15,12 @@
 %\setdoclang{br}{brazil}
 \setdoclang{en}{english}
 
-\hypersetup{
-    colorlinks,
-    linkcolor={red!50!black},
-    citecolor={blue!50!black},
-    urlcolor={blue!80!black},
-    pdfborder={0 0 0},
+\hypersetup{%
+    colorlinks,%
+    linkcolor={red!50!black},%
+    citecolor={blue!50!black},%
+    urlcolor={blue!80!black},%
+    pdfborder={0 0 0},%
 }
 
 \pagestyle{fancy}
@@ -42,11 +42,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\hypersetup{
-    pdftitle={Diego Rabatone Oliveira Resume},
-    pdfauthor={Diego Rabatone Oliveira},
-    pdfsubject={Resume/CV},
-    pdfkeywords={Diego Rabatone Oliveirar, diraol, cv, resume},
+\hypersetup{%
+    pdftitle={Diego Rabatone Oliveira Resume},%
+    pdfauthor={Diego Rabatone Oliveira},%
+    pdfsubject={Resume/CV},%
+    pdfkeywords={Diego Rabatone Oliveirar, diraol, cv, resume},%
     colorlinks=false,       % no lik border color
     allbordercolors=white    % white border color for all
 }
@@ -79,16 +79,16 @@
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{\langif{br}{Contato}{Contact}}
-    \pin \hfill São Paulo, SP, \langif{br}{Brasil}{Brazil}
+    \pin \hfill São Paulo, SP, \langif{br}{Brasil}{Brazil}%
 ~
-    {\Large\textcolor{gray}{\Mobilefone}} \hfill +55 11 9-8231-4249
+    {\Large\textcolor{gray}{\Mobilefone}} \hfill +55 11 9-8231-4249%
 ~
-    {\Large\textcolor{gray}{\Letter}} \hfill \href{mailto:cv@diraol.eng.br}{cv@diraol.eng.br}
-    {\Large\textcolor{gray}{\Letter}} \hfill \href{mailto:diraol@usp.br}{diraol@usp.br}
+    {\Large\textcolor{gray}{\Letter}} \hfill \href{mailto:cv@diraol.eng.br}{cv@diraol.eng.br}%
+    % {\Large\textcolor{gray}{\Letter}} \hfill \href{mailto:diraol@alumni.usp.br}{diraol@alumni.usp.br}%
 ~
-    \tlogo \hfill \href{http://twitter.com/diraol}{@diraol}
+    \tlogo \hfill \href{http://twitter.com/diraol}{@diraol}%
 ~
-    \llogo \hfill \langif{br}{\href{https://br.linkedin.com/in/diraol}{in://diraol}}{\href{https://www.linkedin.com/in/diraol/}{in://diraol}}
+    \llogo \hfill \langif{br}{\href{https://br.linkedin.com/in/diraol}{in://diraol}}{\href{https://www.linkedin.com/in/diraol/}{in://diraol}}%
 ~
   %\section{IRC}
   %  \#diraol (at) irc.freenode.net
@@ -97,12 +97,12 @@
     % \href{http://cv.diraol.eng.br}{cv.diraol.eng.br}
     \href{https://gitlab.com/diraol}{gitlab.com/diraol}
     \href{https://github.com/diraol}{github.com/diraol}
-    ~
+    ~%
   \section{\langif{br}{Idiomas}{Languages}}
     \textbf{\langif{br}{Português}{Portuguese}}\includegraphics[scale=0.40]{img/5stars.png}
     \textbf{\langif{br}{Inglês}{English}}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{\langif{br}{Espanhol}{Spanish}}\includegraphics[scale=0.40]{img/2stars.png}
     \textbf{\langif{br}{Francês}{French}}\includegraphics[scale=0.40]{img/1stars.png}
-    \textbf{\langif{br}{Espanhol}{Spanish}}\includegraphics[scale=0.40]{img/1stars.png}
 \end{aside}
 %
 % EDUCAÇÃO
@@ -134,19 +134,49 @@
 \sectionlang{en}{Experience}
 \begin{entrylist}
   \entry
-    {\langif{br}{Dez/17 - Now}{Dec/17 - Now}}
-    {Systems Engineer}
-    {\href{http://www.cabify.com/}{Cabify}}
-    {\langif{br}{
-         Com a fusão, e após os avanços da unificação das plataformas, passei a
-         trabalhar no time de Engenharia de Sistemas (Systems Engineering),
-       }{
-         With the advances of the platforms unification, I joined the Systems
-         Engineering team,
+    {\langif{br}{Dez/19 - Now}{Dec/19 - Now}}
+    {DevOps Consultant}
+    {\href{http://kobold.com.br/}{KOBOLD}}
+    {\langif{br}{%
+         Consultor SRE/DevOps com foco em padronização e automação de ambiente
+         de desenvolvimento (CI/CD) e infraestrutura na AWS. Desenvolvimento de
+         soluções para redução de custos e treinamento de equipe de
+         desenvolvimento para uso \emph{self-service} de infraestrutura.%
+       }{%
+         SRE/DevOps consultant with focus on automation and standardization of
+         development environment (CI/CD) and infrastructure on AWS. Cost
+         reduction solutions and engineering training (both technical and
+         methodological) to \emph{self-service} on the whole pipeline.%
        } \\ %
      \maintechs
-     K8s, Nomad, Docker, Prometheus, Grafana, Ansible, Terraform, Gitlab, \eand
-     GCloud.
+     AWS, Jenkins, Github, Packer, Terraform, Docker, shellscript. \\
+     \hfill \href{https://kobold.com.br/}{https://kobold.com.br/}%
+    }
+  \entry
+    {\langif{br}{Dez/17 - Now}{Dec/17 - Now}}
+    {Infrastructure Engineer}
+    {\href{http://www.cabify.com/}{Cabify}}
+    {\langif{br}{%
+         Planejamento, desenvolvimento e manutenção da infraestrutura de cloud
+         com foco em habilitar o time de engenharia para desenvolver e realizar
+         deploy da plataforma de microserviços da Cabify. Migração da plataforma
+         do GCP para AWS, gestão de instância própria do Gitlab com completa
+         automação de pipelines de CI/CD, Prometheus, Cortex e Grafana como
+         plataforma de observabilidade e clusters d Elasticsearch para logs.
+         Infraestrutura gerenciada com uso de pipelines de Terraform, Packer e
+         K8s (GKE e EKS). Membro do grupo de segurança.%
+       }{%
+         Planning, development and maintenance of Cloud Infrastructure to enable
+         engineers to develop and deploy Cabify's microservice platform.
+         Migration of the platform from GCP to AWS (2020/2021), management of
+         selfhosted Gitlab with full CI/CD automated pipelines, Prometheus,
+         Cortex and Grafana observability platform, Elasticsearch clusters for
+         logs. Pipeline based Terraform managed infrastructure and K8s (GKE and
+         EKS). Member of the Security guild.%
+       } \\ %
+     \maintechs
+     K8s, Packer, Terraform, Prometheus, Grafana, Elasticsearch, Gitlab, AWS \eand
+     GCP.
      \hfill%
      \href{http://www.cabify.com/}{http://www.cabify.com/}%
     }
@@ -154,35 +184,36 @@
     {}
     {\langif{br}{Engenheiro de Dados Sênior}{Senior Data Engineer}}
     {}
-    {\langif{br}{
+    {\langif{br}{%
          Responsável pelo time de Data Engineering da EasyTaxi. Gestão e
          evolução de todo pipeline de dados, Data Lake e Data Wareouse.
          Interlocução com stakeholders internos como Cientistas de dados,
          Analistas de Negócios, equipes de desenvolvimento, equipes de
          operações, dentre outros.
          Atuei também no projeto de integração das plataformas EasyTaxi e
-         Cabify.
-       }{
-         Responsible for EasyTaxi Data Engineering team. Management and
-         development of data pipelines, Data Lake and Data Warehouse. Close
-         contact with many internal stakeholders, such as Data Scientists,
-         Business Analysts, Development teams, Operational teams, among others.
-         Also worked with the integration between EasyTaxi and Cabify
-         integration.
+         Cabify.%
+       }{%
+         Responsible for EasyTaxi Data Engineering team. Data pipelines, Data
+         Lake and Data Warehouse. Close contact with many internal stakeholders,
+         such as Data Scientists, Business Analysts, Development teams,
+         Operational teams, among others.  Also worked with the integration
+         between EasyTaxi and Cabify integration.%
        } \\ %
      \maintechs
      Kafka, Airflow, Python, Databricks, AWS, BigQuery, \eand InfluxDB.
-     \hfill%
-     \href{http://www.easytaxi.com/}{http://www.easytaxi.com/}%
+     %\hfill%
+     %\href{http://www.easytaxi.com/}{http://www.easytaxi.com/}%
     }
   \entry
     {\langif{br}{Ago/15 - Hoje}{Aug/15 - now}}
     {\langif{br}{Co-fundador}{Co-Founder}}
     {\href{https://ask-ar.xyz}{ASK-AR}}
-    {\langif{br}{
-         Consultoria com foco em dados e tecnologias.
-       }{
-         Consultancy focused in data and technology.
+    {\langif{br}{%
+         Consultoria de análise de dados e desenvolvimento de tecnologia para
+         promover maior equidade social, com excelência, crítica e ética.
+       }{%
+         Data analysis and technology development with the goal of promote
+         better social equity, with excelence, critical thinking and ethic.
        }%
      \hfill%
      \href{https://ask-ar.xyz}{https://ask-ar.xyz}%
@@ -192,16 +223,16 @@
     {\langif{br}{Co-fundador, coordenador e membro}{Co-Founder, coordinator and member}}
     {\href{http://polignu.org}{PoliGNU}}
     {\langif{br}{Grupo de Estudos de Software Livre da Poli-USP}{Poli-USP Free Software Studies Group} (\href{https://polignu.org}{PoliGNU})\\
-     \langif{br}{
+     \langif{br}{%
          Organização e planejamento, Gestão de Infraestrutura (SysAdmin e website).
          Apresentações em conferências, seminários, workshops, etc.\\
-         Palavras Chave: Software Livre, projetos, divulgação
-       }{
+         Palavras Chave: Software Livre, projetos, divulgação%
+       }{%
          Organization and planning, infrastructure management (SysAdmin, website),
          disclosure and presentation at conferences, seminars, workshops, etc.\\
-         Keywords: Free Software, projects, advocating
+         Keywords: Free Software, projects, advocating%
        }
-     \hfill 
+     \hfill
      \href{http://polignu.org}{http://polignu.org}%
     }
   % https://indico.cern.ch/event/647995/contributions/2652502/attachments/1507421/2349378/RENAFAE_2017_RLIope.pdf
@@ -228,8 +259,77 @@
      \maintechs
      Python, SDN, OpenFlow, REST, API \eand d3js%
      \hfill%
-     \href{https://kytos.io}{https://kytos.io}
+     \href{https://kytos.io}{https://kytos.io}%
     }
+\end{entrylist}
+%
+% NOVA PÁGINA
+%
+\newpage
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+%
+% BARRA LATERAL
+%
+\begin{aside}
+~
+~
+~
+  \section{\langif{br}{Tecnologias e ferramentas}{Technologies and tools}}
+    awk
+    AWS
+    Airflow
+    BigQuery
+    Databricks
+    Docker
+    GCP
+    Git
+    Gitlab
+    grep
+    jq
+    K8s
+    Kafka
+    Packer
+    Python
+    R
+    sed
+    Shell Script
+    Terraform
+    % CSS
+    % JavaScript
+    %\LaTeX
+    %CartoDB
+    % Django
+    % Drupal
+    % Gimp
+    % Inkscape
+    % Mediawiki
+    % MySQL/MariaDB
+    % NFS
+    %Nginx
+    % OpenLDAP
+    % OpenFlow
+    % Postgres
+    % QuantumGis
+    % SDN
+    % Varnish
+    % Wordpress
+    % Xen
+  ~
+  \section{\langif{br}{Ambiente diário}{Daily Env}}
+    Debian GNU/Linux \\%\includegraphics[scale=0.40]{img/5stars.png}
+    swaywm \\%Gnome3 \\%\includegraphics[scale=0.40]{img/2stars.png}
+    Vim
+  ~
+  \section{Hobbies}
+      \href{http://olhares.com/diraol}{\langif{br}{Fotografia}{Photography}}
+      Tae-Kwon-Do
+\end{aside}
+%
+% EXPERIÊNCIA (parte 2)
+%
+\sectionlang{br}{Experiência - cont.}
+\sectionlang{en}{Experience - cont.}
+\begin{entrylist}
   %\entry
   %  {\langif{br}{Nov/15 - Fev/16}{Nov/15 - Feb/16}}
   %  {\langif{br}{Desenvolvedor}{Developer}}
@@ -249,85 +349,24 @@
     {\langif{br}{Ago/15 - Out/15}{Aug/15 - Oct/15}}
     {\langif{br}{Pesquisador Sênior }{Senior Researcher}}
     {\href{https://fga.unb.br/lappis}{LAPPIS/UNB e CGU}}
-    {\langif{br}{
+    {\langif{br}{%
          Especificação de aplicação para gestão de transparência governamental.\\
-         Palavras Chave: Python/Django, Dados Governamentais Abertos
-       }{
+         Palavras Chave: Python/Django, Dados Governamentais Abertos%
+       }{%
          Designed Software to control governamental transparency indexes.\\
-         Keywords: Python, Django, OpenData, OpenGovernment, Transparency
+         Keywords: Python, Django, OpenData, OpenGovernment, Transparency%
        }\\
      \href{https://gitlab.com/mibt/mibt}{https://gitlab.com/mibt/mibt}
    }
-\end{entrylist}
-%
-% NOVA PÁGINA
-%
-\newpage
-\pagenumbering{gobble}% Remove page numbers (and reset to 1)
-%
-% BARRA LATERAL
-%
-\begin{aside}
-~
-~
-~
-  \section{\langif{br}{Tecnologias e ferramentas}{Technologies and tools}}
-    Python
-    R
-    Shell Script
-    Airflow
-    Kafka
-    Databricks
-    Docker
-    AWS Cloud
-    Google Cloud
-    BigQuery
-    Git
-    % CSS
-    % JavaScript
-    %\LaTeX
-    CartoDB
-    % Django
-    % Drupal
-    % Gimp
-    % Inkscape
-    % Mediawiki
-    % MySQL/MariaDB
-    % NFS
-    Nginx
-    % OpenLDAP
-    % OpenFlow
-    % Postgres
-    % QuantumGis
-    % SDN
-    % Varnish
-    % Wordpress
-    % Xen
-  ~
-  \section{\langif{br}{Ambiente diário}{Daily Env}}
-    Debian GNU/Linux \\%\includegraphics[scale=0.40]{img/5stars.png}
-    i3wm \\%Gnome3 \\%\includegraphics[scale=0.40]{img/2stars.png}
-    Vim
-  ~
-  \section{Hobbies}
-      \href{http://olhares.com/diraol}{\langif{br}{Fotografia}{Photography}}
-      Tae-Kwon-Do
-\end{aside}
-%
-% EXPERIÊNCIA (parte 2)
-%
-\sectionlang{br}{Experiência - cont.}
-\sectionlang{en}{Experience - cont.}
-\begin{entrylist}
   \entry
     {\langif{br}{Ago/15 - Out/15}{Aug/15 - Oct/15}}
     {\langif{br}{Consultor}{Consultant}}
     {\href{http://www.gvces.com.br/}{FGV - GVCes}}
-    {\langif{br}{
+    {\langif{br}{%
          Atuação como \textit{Product Owner} no desenvolvimento de um sistema de Gestão e Divulgação de Indicadores
          ligado ao projeto \href{http://indicadoresdebelomonte.com.br}{``Indicadores de Belo Monte''}.
-       }{
-         \textit{Product Owner} on the open data platform
+       }{%
+         \textit{Product Owner} on the open data platform%
          \href{http://indicadoresdebelomonte.com.br}{``Indicadores de Belo Monte''}.
        }\\
      \href{http://indicadoresdebelomonte.com.br}{http://indicadoresdebelomonte.com.br}
@@ -337,12 +376,12 @@
     {\langif{br}{Consultor PNUD}{UNDP Consultant}}
     {\href{http://participacao.mj.gov.br}{\langif{br}{Ministério da Justiça}{Brazilian Ministry of Justice}}}
     {\langif{br}{Consultor pelo Programa das Nações Unidas para o Desenvolvimento}{United Nations Development Programme IT Consultant}\\
-     \langif{br}{
+     \langif{br}{%
          Planejamento e desenvolvimento das plataformas de Consulta Pública do Ministério da Justiça.
          Implementação de metodologias ágeis.\\
          Palavras Chave: Wordpress, PHP, democracia participativa, métodos ágeis
-       }{
-         Planning and development of Brazilian Justice Ministry Public Feedback Platforms.%
+       }{%
+         Planning and development of Brazilian Justice Ministry Public Feedback Platforms.
          Implementation of agile methodology.\\
          Keywords: Wordpress, PHP, participative democracy, Agile
        }\\
@@ -352,15 +391,15 @@
     {\langif{br}{Jul/12 - Fev/15}{Jul/12 - Feb/15}}
     {\langif{br}{Analista de Mídias Digitais}{Digital Media Analyst}}
     {O Estado de S.Paulo S/A}
-    {\langif{br}{
-         Desenvolvedor na equipe de jornalismo de dados.
-       }{
-         Main developer of the data driven journalism team.
+    {\langif{br}{%
+         Desenvolvedor na equipe de jornalismo de dados.%
+       }{%
+         Main developer of the data driven journalism team.%
        } ("\href{http://estadaodados.com}{Estadão Dados}")\\
-     \langif{br}{
-         Palavras Chave: extração, tratamento, união, processamento, análise e \nohyphens{visualização} de dados.
-       }{
-         Keywords: Data extraction, scraping, gathering, processing, analysis and \nohyphens{visualization}.
+     \langif{br}{%
+         Palavras Chave: extração, tratamento, união, processamento, análise e \nohyphens{visualização} de dados.%
+       }{%
+         Keywords: Data extraction, scraping, gathering, processing, analysis and \nohyphens{visualization}.%
        }\hfill
      \href{http://estadaodados.com}{http://estadaodados.com}
     }
@@ -418,11 +457,16 @@
 %\sectionlang{en}{Projects and Communities}
 \sectionlang{br}{Projetos}
 \sectionlang{en}{Projects}
-\textbf{\langif{br}{Radar Parlamentar}{The Parliamentary Radar}} \hfill \href{http://radarparlamentar.polignu.org/}{http://radarparlamentar.polignu.org/}\\
+\textbf{python-mode} \hfill \href{https://github.com/python-mode/python-mode}{https://github.com/python-mode/python-mode/}\\
+\langif{br}%
+{Mantenedor do plugin \emph{python-mode} para vim desde 2017.}%
+{Maintainer of the vim plugin \emph{python-mode} since 2017.}\\
+
+\textbf{\langif{br}{Radar Parlamentar}{The Parliamentary Radar}} \hfill \href{https://radarparlamentar.polignu.org/}{https://radarparlamentar.polignu.org/}\\
 \langif{br}%
 {Aplicativo que determina ``semelhanças'' entre partidos \nohyphens{políticos} baseado na análise matemática dos dados de votações de projetos de lei na casa \nohyphens{legislativa}. Existem ainda algumas análises relativas a questões de gênero no Parlamento.\\
 Recebeu 4 premiações desde 2012.}%
-{A web application that calculate ``similarities'' between political parties based on legislative houses voting data analysis. There are also some gender analysis from the Parliament. 
+{A web application that calculate ``similarities'' between political parties based on legislative houses voting data analysis. There are also some gender analysis from the Parliament.
 Has been awarded 4 times since 2012.}\\
 \maintechs Django/Python, R, Postgres, nginx, ElasticSearch \eand d3js
 
@@ -529,16 +573,16 @@ Has been awarded 4 times since 2012.}\\
 % https://web.archive.org/web/20190505183456/https://www.amlight.net/?p=2999
 {\footnotesize{\langif{br}{Nov/17}{Nov/17}}} \- \href{https://sc17.supercomputing.org/}{\textbf{The International Conference for High Performance Computing, Networking, Storage and Analysis - SC17 @ Denver, \langif{br}{EUA}{USA}}}\\
 \langif{br}{%
-  Apresentação do projeto Kytos desenvolvido na UNESP, com execução de uma%
-  \href{https://web.archive.org/web/20190505183456/https://www.amlight.net/?p=2999}{demonstração}%
-  de transmissão de dados entre São Paulo e Miami atingindo 370Gpbs numa%
+  Apresentação do projeto Kytos desenvolvido na UNESP, com execução de uma
+  \href{https://web.archive.org/web/20190505183456/https://www.amlight.net/?p=2999}{demonstração}
+  de transmissão de dados entre São Paulo e Miami atingindo 370Gpbs numa
   parceria entre Caltech, AmLight, RNP e UNESP%
 }{%
-  Attended the Conference to present Kytos.%
-  During the conference we%
-  \href{https://web.archive.org/web/20190505183456/https://www.amlight.net/?p=2999}{demoed}%
-  a data transmission between South (São Paulo) and North (Miami) hemispheres%
-  reaching a steady rate of 370Gbps, in a joint effort between Caltech,%
+  Attended the Conference to present Kytos.
+  During the conference we
+  \href{https://web.archive.org/web/20190505183456/https://www.amlight.net/?p=2999}{demoed}
+  a data transmission between South (São Paulo) and North (Miami) hemispheres
+  reaching a steady rate of 370Gbps, in a joint effort between Caltech,
   AmLight, RNP and UNESP.%
 }%
 
@@ -550,10 +594,10 @@ Has been awarded 4 times since 2012.}\\
   Attended the Conference to present Kytos (Software Defined Controller developed at UNESP).%
 }%
 
-{\footnotesize{\langif{br}{Dez/16}{Dec/16}}} - \href{https://www.facebook.com/events/1617891821849460/}{\textbf{UP\{Design For All\}it}}\\
-\langif{br}{Mentor do 3$^o$ encontro \textit{UPWIT - Design For All}. Um evento com objetivo de pensar tecnologias de forma inclusiva}
-           {Mentor on the 3$^{rd}$ \textit{UPWIT - Design For All}. An event to think inclusive technologies}.
-
+% {\footnotesize{\langif{br}{Dez/16}{Dec/16}}} - \href{https://www.facebook.com/events/1617891821849460/}{\textbf{UP\{Design For All\}it}}\\
+% \langif{br}{Mentor do 3$^o$ encontro \textit{UPWIT - Design For All}. Um evento com objetivo de pensar tecnologias de forma inclusiva}
+%            {Mentor on the 3$^{rd}$ \textit{UPWIT - Design For All}. An event to think inclusive technologies}.
+%
 {\footnotesize{\langif{br}{Mai/16}{May/16}}} - \href{https://rgaiacs.github.io/2016-05-27-ccsl/}{\textbf{Software Carpentry Workshop}}\\
 \langif{br}{Instrutor de R no workshop realizado na Universidade de São Paulo (USP)}
            {R instructor on the workshop held at University of São Paulo}.
@@ -570,9 +614,9 @@ Has been awarded 4 times since 2012.}\\
 % http://web.archive.org/web/20170301110629/http://pinghacker.com.br/hackagenda/sesi-cultura-digital-2015-hackathon-o-museu-do-seculo-xxi/
 % http://web.archive.org/web/20170301110501/http://www.firjan.com.br/sesi/qualidade-de-vida/projetos-sesi-cultural/sesi-cultura-digital/hackaton/
 
-{\footnotesize{\langif{br}{Set/15}{Sep/15}}} - \href{http://rgaiacs.github.io/2015-09-10-usp/}{\textbf{Software Carpentry Workshop}}\\
-\langif{br}{Instrutor de git no workshop realizado na Universidade de São Paulo (USP)}
-           {Git instructor on the workshop held at University of São Paulo}.
+% {\footnotesize{\langif{br}{Set/15}{Sep/15}}} - \href{http://rgaiacs.github.io/2015-09-10-usp/}{\textbf{Software Carpentry Workshop}}\\
+% \langif{br}{Instrutor de git no workshop realizado na Universidade de São Paulo (USP)}
+%            {Git instructor on the workshop held at University of São Paulo}.
 % http://web.archive.org/web/20160602202812/https://rgaiacs.github.io/2015-09-10-usp/
 
 {\footnotesize{\langif{br}{Ago/15}{Aug/15}}} - \href{https://portaldoaluno.casperlibero.edu.br/agenda-eventos/semana-de-jornalismo-casper-libero-2/}{\textbf{\langif{br}{Seminário de Jornalismo da Faculdade Casper Líbero}{Journalism Seminar on Casper Líbero University}}}\\
@@ -603,8 +647,8 @@ Has been awarded 4 times since 2012.}\\
 %https://web.archive.org/web/20170301112535/https://knightcenter.utexas.edu/pt-br/blog/00-14390-inscricoes-abertas-para-primeiro-curso-da-anj-com-o-centro-knight-introducao-ao-jornal
 
 {\footnotesize{Nov/13}} - \href{https://web.archive.org/web/20140330181037/http://2.encontro.dados.gov.br/encontro.html}{\textbf{\langif{br}{II Encontro Nacional de Dados Abertos}{II Brazilian National Conference of OpenData}}}\\
-\langif{br}{\textit{Chairman} da Trilha de Visualização de Dados}
-           {Dataviz trail Chairman}.
+\langif{br}{\textit{Chairperson} da Trilha de Visualização de Dados}
+           {Dataviz trail Chairperson}.
 % http://2.encontro.dados.gov.br/encontro.html
 
 {\footnotesize{Jul/13}} - \href{http://rodadahacker.com/}{\textbf{II RodAda Hacker}}\\
@@ -616,9 +660,9 @@ Has been awarded 4 times since 2012.}\\
            {Speaker on the ``eGov and Open Data Camp'' panel, talking about ``The challenges and opportunities of data journalism''}.
 % https://web.archive.org/web/20161223084334/http://www2013.org/tracks/w3c-track/
 
-{\footnotesize{\langif{br}{Abr/13}{Apr/13}}} - \href{https://setemasters.imasters.com.br/edicoes/opendata/}{\textbf{7Masters OpenData}}\\
-\langif{br}{Apresentação do projeto Radar Parlamentar.}
-           {Speech about the Parliamentary Radar Project}.
+% {\footnotesize{\langif{br}{Abr/13}{Apr/13}}} - \href{https://setemasters.imasters.com.br/edicoes/opendata/}{\textbf{7Masters OpenData}}\\
+% \langif{br}{Apresentação do projeto Radar Parlamentar.}
+%            {Speech about the Parliamentary Radar Project}.
 % https://setemasters.imasters.com.br/edicoes/opendata/
 % https://web.archive.org/web/20140923074920/http://setemasters.imasters.com.br/edicoes/opendata/
 % https://setemasters.imasters.com.br/conversas/radar-parlamentar/
@@ -628,17 +672,17 @@ Has been awarded 4 times since 2012.}\\
 \langif{br}{Mentor na primeira edição da ``RodAda Hacker, um workshop de um dia que objetiva dar a mulheres mais autonomia com tecnologias}%
            {Mentor on the first edition of ``RodAda Hacker'', a one day workshop that aims to give woman autonomy with technologies}.
 
-{\footnotesize{Nov/12}} - \href{http://hackshackers.com/blog/author/gfaleiros/}{\textbf{\langif{br}{1$^o$ Hackathon HacksHackers}{1$^{st}$ HacksHackers Hackathon}}}
+% {\footnotesize{Nov/12}} - \href{http://hackshackers.com/blog/author/gfaleiros/}{\textbf{\langif{br}{1$^o$ Hackathon HacksHackers}{1$^{st}$ HacksHackers Hackathon}}}
 % https://web.archive.org/web/20160414124730/http://hackshackers.com/blog/author/gfaleiros/
 
-{\footnotesize{\langif{br}{Out/12}{Oct/12}}} - \href{http://yapcbrasil.org.br/2012/talk/110}{\textbf{YAPC::Brasil 2012}}\\
-\langif{br}{Palestrante: ``Radar Parlamentar: Desvendando a política legislativa''}%
-           {Speaker: ``The Parliamentary Radar: Unraveling the legislative politics''}.
+% {\footnotesize{\langif{br}{Out/12}{Oct/12}}} - \href{http://yapcbrasil.org.br/2012/talk/110}{\textbf{YAPC::Brasil 2012}}\\
+% \langif{br}{Palestrante: ``Radar Parlamentar: Desvendando a política legislativa''}%
+%            {Speaker: ``The Parliamentary Radar: Unraveling the legislative politics''}.
 % https://web.archive.org/web/20121022134231/http://yapcbrasil.org.br/2012/talks
 
-{\footnotesize{Jul/12}} - \href{http://softwarelivre.org/fisl13}{\textbf{\langif{br}{13$^o$ Fórum Internacional de Software Livre (FISL)}{13$^{th}$ International Free Software Forum}}}\\
-\langif{br}{Apresentação do Projeto Radar Parlamentar no Workshop de Software Livre (WSL)}
-           {Presented the Parliamentary Radar project on the Free Software Workshop (WSL)}.
+% {\footnotesize{Jul/12}} - \href{http://softwarelivre.org/fisl13}{\textbf{\langif{br}{13$^o$ Fórum Internacional de Software Livre (FISL)}{13$^{th}$ International Free Software Forum}}}\\
+% \langif{br}{Apresentação do Projeto Radar Parlamentar no Workshop de Software Livre (WSL)}
+%            {Presented the Parliamentary Radar project on the Free Software Workshop (WSL)}.
 % http://softwarelivre.org/articles/0125/7499/caderno-digital.pdf
 
 {\footnotesize{\langif{br}{Mai/10}{May/10}}} - \href{http://artigo19.org/infoedireitoseu/?p=560}{\textbf{\langif{br}{O direito ao Acesso à Informação}{The Right to Information Access}}}\\
@@ -656,8 +700,8 @@ Has been awarded 4 times since 2012.}\\
 %
 %\end{flushright}
 %
-%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
-% 
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors.
+%
 %\printbibsection{article}{article in peer-reviewed journal}
 %\begin{refsection}
 %  \nocite{*}
