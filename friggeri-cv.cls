@@ -176,14 +176,36 @@
   \\}
 
 
-%%%%%%%%%%%%%%
-% Side block %
-%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Side block for first page %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
-\setlength{\TPVertModule}{1cm}
+\newenvironment{asidefp}{%
+  \setlength{\TPHorizModule}{1cm}
+  \setlength{\TPVertModule}{0.5cm}
+  \let\oldsection\section
+  \renewcommand{\section}[1]{
+    \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
+  }
+  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{flushright}
+  \obeycr
+}{%
+  \restorecr
+  \end{flushright}
+  \end{textblock}
+  \let\section\oldsection
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Side block for non-first pages %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[absolute,overlay]{textpos}
 \newenvironment{aside}{%
+  \setlength{\TPHorizModule}{1cm}
+  \setlength{\TPVertModule}{0.1cm}
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
